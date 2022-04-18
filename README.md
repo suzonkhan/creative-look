@@ -9,3 +9,11 @@
  * Login with google 
  * Register with email and password
  * 404 page 
+
+### Technologies
+* React
+* JSON
+* Bootstrap
+* React Router
+* Firebase authorization and authentication
+* Firebase Hosting
