@@ -1,30 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import { useAuthState, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useAuthState,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Authentication from "../../Authentication/Authentication";
 import auth from "../../firebase.init";
 
 const Login = () => {
+  //  const [errorMessage, setErrorMessage] = useState('');
   let navigate = useNavigate();
   let location = useLocation();
   let from = location.state?.from?.pathname || "/";
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-     
-    if (error) {
-        return (
-          <div>
-            <p>Error: {error.message}</p>
-          </div>
-        );
-      }
-      if (loading) {
-        return <p>Loading...</p>;
-      }
-    if (user) {
-        navigate(from, { replace: true });
-    }
+
+  if (error) {
+    return (
+      <div className="py-5">
+        <p className="text-center">Error: {error.message}</p>
+      </div>
+    )
+  }
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+  if (user) {
+    navigate(from, { replace: true });
+  }
   const submitLogin = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -63,18 +67,20 @@ const Login = () => {
                   required
                 />
               </Form.Group>
-               
+
               <Button className="w-100" variant="primary" type="submit">
                 Submit
               </Button>
-              <p className="my-4">Don't have account <Link to='/registration'>Register Now.</Link></p>
+
+              <p className="my-4">
+                Don't have account <Link to="/registration">Register Now.</Link>
+              </p>
             </Form>
           </Col>
-          
         </Row>
-        <Row  className="justify-content-md-center mt-3">
-        <Col xs lg="4">
-              <Authentication></Authentication>
+        <Row className="justify-content-md-center mt-3">
+          <Col xs lg="4">
+            <Authentication></Authentication>
           </Col>
         </Row>
       </Container>
