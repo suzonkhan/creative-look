@@ -1,0 +1,23 @@
+[
+    {
+       "id":1,
+       "name":"Wedding Photography",
+       "description":"I will cover full wedding ceremony within this package. Within this package i will provide you 100 copy photo by lab print and 1000 copy photos into a CD or a pendrive.  ",
+       "image":"https://i.ibb.co/HNN9BMZ/270205621-453236372839348-5194830398547654222-n.png",
+       "price":20500
+    },
+    {
+       "id":2,
+       "name":"Product Photography",
+       "description":"Good looking photos create huge selling opportunity for eCommerce business. Within this package i will shoot photo for 1000 products and will edit this for your business. ",
+       "image":"https://i.ibb.co/GPwZBX6/image-2.png",
+       "price":12500
+    },
+    {
+       "id":3,
+       "name":"Corporate Photography",
+       "description":"I know all corporate event is not only an event. Its may carry some bussiness value and object so i will take this corporate event photo as a professional photographer.",
+       "image":"https://i.ibb.co/hC4JKGL/istockphoto-486052455-612x612.png",
+       "price":15000
+    }
+ ]
