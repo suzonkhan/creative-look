@@ -34,7 +34,7 @@ const Registration = () => {
     <section className="page-block">
       <Container>
         <div>
-          <h2>Reg</h2>
+          <h2>Registration</h2>
         </div>
         <Row className="justify-content-md-center">
           <Col xs lg="4">

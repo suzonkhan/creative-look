@@ -26,9 +26,9 @@ const Header = () => {
             <Link to="/blog" className="nav-link">
               Blog
             </Link>
-            <Link to="/checkout" className="nav-link">
+            {/* <Link to="/checkout" className="nav-link">
               Checkout
-            </Link>
+            </Link> */}
 
             {user ? 
                <Button onClick={()=> signOut(auth)}> Logout </Button>

@@ -24,13 +24,13 @@ const Home = () => {
           </Row>
           <Row>
             {services.map(service => 
-                <Col key={service.id}>
+                <Col xs={12} sm={6} md={4} lg={4}  key={service.id}>
                   <div className="service-box">
                     <img src={service.image} alt="" />
                     <h3>{service.name}</h3>
                     <p>{service.description}</p>
                     <p className="lead text-danger text-bold">Price: {service.price} Taka</p>
-                    <Link className="btn btn-primary" to="/checkout"> Book Now </Link>
+                    <Link className="btn btn-primary" to={`/checkout/${service.id}`}> Book Now </Link>
                   </div>
                 </Col>
                 

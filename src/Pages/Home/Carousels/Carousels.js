@@ -17,7 +17,7 @@ const Carousels = () => {
           <Carousel.Caption>
             <h3 className='h1'>Looking for Photography?</h3>
             <p className='lead my-3'>I will cover full wedding ceremony within this package. Within this package i will provide you 100 copy photo by lab print and 1000 copy photos into a CD or a pendrive.</p>
-            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
+            <Link className="btn btn-primary mb-4" to="/checkout/3"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -30,7 +30,7 @@ const Carousels = () => {
           <Carousel.Caption>
           <h3 className='h1'>Wedding Photography</h3>
             <p className='lead my-3'>I will cover full wedding ceremony within this package. Within this package i will provide you 100 copy photo by lab print and 1000 copy photos into a CD or a pendrive.</p>
-            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
+            <Link className="btn btn-primary mb-4" to="/checkout/1"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -43,7 +43,7 @@ const Carousels = () => {
           <Carousel.Caption>
           <h3 className='h1'>Product Photography</h3>
             <p className='lead my-3'>Good looking photos create huge selling opportunity for eCommerce business. Within this package i will shoot photo for 1000 products and will edit this for your business.</p>
-            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
+            <Link className="btn btn-primary mb-4" to="/checkout/2"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
