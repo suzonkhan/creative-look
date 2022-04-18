@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useServices from "../../hooks/useServices";
 import Carousels from "./Carousels/Carousels";
 
@@ -29,7 +30,7 @@ const Home = () => {
                     <h3>{service.name}</h3>
                     <p>{service.description}</p>
                     <p className="lead text-danger text-bold">Price: {service.price} Taka</p>
-                    <Button> Book Now </Button>
+                    <Link className="btn btn-primary" to="/checkout"> Book Now </Link>
                   </div>
                 </Col>
                 
