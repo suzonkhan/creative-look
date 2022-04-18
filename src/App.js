@@ -1,16 +1,31 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Home from './Pages/Home/Home';
-import Footer from './Shared/Footer/Footer';
-import Header from './Shared/Header/Header';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Checkout from "./Pages/Checkout/Checkout";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import NotFound from "./Pages/NotFound/NotFound";
+import Registration from "./Pages/Registration/Registration";
+import RequireAuth from "./RequireAuth/RequireAuth";
+import Footer from "./Shared/Footer/Footer";
+import Header from "./Shared/Header/Header";
 
 function App() {
   return (
     <div className="page-wrapper">
       <Header></Header>
-       <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="about" element={<About />} /> */}
+        <Route
+          path="checkout"
+          element={
+            <RequireAuth>
+              <Checkout />
+            </RequireAuth>
+          }
+        />
+        <Route path="registration" element={<Registration />} />
+        <Route path="login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer></Footer>
     </div>
