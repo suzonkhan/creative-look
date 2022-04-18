@@ -73,7 +73,10 @@ const Login = () => {
               </Button>
 
               <p className="my-4">
-                Don't have account <Link to="/registration">Register Now.</Link>
+                Don't have account? <Link to="/registration">Register Now.</Link>
+              </p>
+              <p className="my-4">
+              Forget Password? <Link to="/forget-password">Click here</Link>
               </p>
             </Form>
           </Col>
