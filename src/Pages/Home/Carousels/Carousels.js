@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import SliderImageOne from './../../../images/slider-01.jpg';
 import SliderImageTwo from './../../../images/slider-02.jpg';
 import SliderImageThree from './../../../images/slider-03.jpg';
@@ -14,8 +15,9 @@ const Carousels = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3 className='h1'>First slide label</h3>
-            <p className='h3'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className='h1'>Looking for Photography?</h3>
+            <p className='lead my-3'>I will cover full wedding ceremony within this package. Within this package i will provide you 100 copy photo by lab print and 1000 copy photos into a CD or a pendrive.</p>
+            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -26,8 +28,9 @@ const Carousels = () => {
           />
 
           <Carousel.Caption>
-            <h3 className='h1'>Second slide label</h3>
-            <p className='h3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='h1'>Wedding Photography</h3>
+            <p className='lead my-3'>I will cover full wedding ceremony within this package. Within this package i will provide you 100 copy photo by lab print and 1000 copy photos into a CD or a pendrive.</p>
+            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,10 +41,9 @@ const Carousels = () => {
           />
 
           <Carousel.Caption>
-            <h3 className='h1'>Third slide label</h3>
-            <p className='h3'>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+          <h3 className='h1'>Product Photography</h3>
+            <p className='lead my-3'>Good looking photos create huge selling opportunity for eCommerce business. Within this package i will shoot photo for 1000 products and will edit this for your business.</p>
+            <Link className="btn btn-primary mb-4" to="/checkout"> Book Now </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
